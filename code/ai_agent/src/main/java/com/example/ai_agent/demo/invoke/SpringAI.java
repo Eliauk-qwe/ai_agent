@@ -22,6 +22,7 @@ public class SpringAI  implements CommandLineRunner {
         AssistantMessage assistantMessage = dashscopeChatModel.call(new Prompt("你好"))
                 .getResult()
                 .getOutput();
+        System.out.println("SpringAI 响应：");
         System.out.println(assistantMessage.getText());
 
 

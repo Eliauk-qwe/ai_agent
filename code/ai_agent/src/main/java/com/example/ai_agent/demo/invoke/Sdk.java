@@ -38,6 +38,7 @@ public class Sdk {
     public static void main(String[] args) {
         try {
             GenerationResult result = callWithMessage();
+            System.out.println("SDK 响应：");
             System.out.println(JsonUtils.toJson(result));
         } catch (ApiException | NoApiKeyException | InputRequiredException e) {
             // 使用日志框架记录异常信息

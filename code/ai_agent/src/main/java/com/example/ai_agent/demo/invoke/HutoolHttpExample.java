@@ -24,7 +24,9 @@ public class HutoolHttpExample {
             System.err.println("请设置环境变量 DASHSCOPE_API_KEY");
             return;
         }
-        
+
+        System.out.println("HTTP 响应：");
+
         String response = callDashScopeApi(apiKey, "你是谁？");
         System.out.println("完整响应结果：");
         System.out.println(response);

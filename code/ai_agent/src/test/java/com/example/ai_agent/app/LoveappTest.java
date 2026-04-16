@@ -25,7 +25,6 @@ class LoveAppTest {
         // 第二轮
         message = "我想让另一半（编程导航）更爱我";
         answer = loveApp.doChat(message, chatId);
-
         Assertions.assertNotNull(answer);
         // 第三轮
         message = "我的另一半叫什么来着？刚跟你说过，帮我回忆一下";
